@@ -1,3 +1,3 @@
 # Calculadora Simples Tkinter
- Calculadora simples em Python TKinter
+ <p>Calculadora simples em Python TKinter</p>
 <img src="/Calculadota_Tkinter/Calc.png" alt="Calculadora Simples">
