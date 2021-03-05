@@ -14,7 +14,7 @@ def calc_main():
             self.entry_resultado = Entry(frm_resultado, width=13, bg='#fff', font=('helvetica', 32))
 
             # Instanciando Botões
-            btn_raiz = Button(frm_botoes, text=u'\u221A', bg='#2a2a2a', fg='#fff', width=10, pady=10, command=lambda: self.click('sqrt'))
+            btn_raiz = Button(frm_botoes, text=u'\u221A', bg='#2a2a2a', fg='#fff', width=10, pady=10, command=self.raiz2)
             btn_exp = Button(frm_botoes, text=u'x\u00B2', bg='#2a2a2a', fg='#fff', width=10, pady=10, command=lambda: self.click('^'))
             btn_C = Button(frm_botoes, text='C', width=10, bg='#2a2a2a', fg='#fff', pady=10, command=self.clear)
             btn_back = Button(frm_botoes, text=u'\u232B', bg='#2a2a2a', fg='#fff', width=10, pady=10, command=self.clear_end)
@@ -127,6 +127,12 @@ def calc_main():
         def exponencial(self, vlrs):
             vlrs = vlrs.split('^')
             result = float(vlrs[0]) ** float(vlrs[1])
+            self.entry_resultado.delete(0, END)
+            self.entry_resultado.insert(0, str(result))
+
+        def raiz2(self):
+            num = self.entry_resultado.get()
+            result = sqrt(int(num))
             self.entry_resultado.delete(0, END)
             self.entry_resultado.insert(0, str(result))
 
