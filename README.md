@@ -1,2 +1,2 @@
 # Calculadora Simples Tkinter
- Calculadora simples em Python/Tkinter
+ Calculadora simples em Python TKinter
