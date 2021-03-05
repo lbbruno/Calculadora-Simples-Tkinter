@@ -14,27 +14,32 @@ def calc_main():
             self.entry_resultado = Entry(frm_resultado, width=13, bg='#fff', font=('helvetica', 32))
 
             # Instanciando Botões
-            btn_raiz = Button(frm_botoes, text=u'\u221A', width=10, pady=10, command=lambda: self.click('sqrt'))
-            btn_exp = Button(frm_botoes, text=u'x\u00B2', width=10, pady=10, command=lambda: self.click('^'))
-            btn_C = Button(frm_botoes, text='C', width=10, pady=10, command=self.clear)
-            btn_back = Button(frm_botoes, text=u'\u232B', width=10, pady=10, command=self.clear_end)
-            btn_div = Button(frm_botoes, text='/', width=10, pady=10, command=lambda: self.click('/'))
-            btn_7 = Button(frm_botoes, text='7', width=10, pady=10, command=lambda: self.click('7'))
-            btn_8 = Button(frm_botoes, text='8', width=10, pady=10, command=lambda: self.click('8'))
-            btn_9 = Button(frm_botoes, text='9', width=10, pady=10, command=lambda: self.click('9'))
-            btn_mult = Button(frm_botoes, text='x', width=10, pady=10, command=lambda: self.click('x'))
-            btn_4 = Button(frm_botoes, text='4', width=10, pady=10, command=lambda: self.click('4'))
-            btn_5 = Button(frm_botoes, text='5', width=10, pady=10, command=lambda: self.click('5'))
-            btn_6 = Button(frm_botoes, text='6', width=10, pady=10, command=lambda: self.click('6'))
-            btn_sub = Button(frm_botoes, text='-', width=10, pady=10, command=lambda: self.click('-'))
-            btn_1 = Button(frm_botoes, text='1', width=10, pady=10, command=lambda: self.click('1'))
-            btn_2 = Button(frm_botoes, text='2', width=10, pady=10, command=lambda: self.click('2'))
-            btn_3 = Button(frm_botoes, text='3', width=10, pady=10, command=lambda: self.click('3'))
-            btn_soma = Button(frm_botoes, text='+', width=10, pady=10, command=lambda: self.click('+'))
-            btn_inverte_sinal = Button(frm_botoes, text=u'\u00B1', width=10, pady=10)
-            btn_0 = Button(frm_botoes, text='0', width=10, pady=10, command=lambda: self.click('0'))
-            btn_ponto = Button(frm_botoes, text=',', width=10, pady=10, command=lambda: self.click('.'))
-            btn_iqual = Button(frm_botoes, text='=', width=45, pady=10, command=self.igual)
+            btn_raiz = Button(frm_botoes, text=u'\u221A', bg='#2a2a2a', fg='#fff', width=10, pady=10, command=lambda: self.click('sqrt'))
+            btn_exp = Button(frm_botoes, text=u'x\u00B2', bg='#2a2a2a', fg='#fff', width=10, pady=10, command=lambda: self.click('^'))
+            btn_C = Button(frm_botoes, text='C', width=10, bg='#2a2a2a', fg='#fff', pady=10, command=self.clear)
+            btn_back = Button(frm_botoes, text=u'\u232B', bg='#2a2a2a', fg='#fff', width=10, pady=10, command=self.clear_end)
+
+            btn_div = Button(frm_botoes, text='/', width=10, bg='#2a2a2a', fg='#fff', pady=10, command=lambda: self.click('/'))
+            btn_7 = Button(frm_botoes, text='7', bg='#6f6f6f', fg='#fff', width=10, pady=10, command=lambda: self.click('7'))
+            btn_8 = Button(frm_botoes, text='8', bg='#6f6f6f', fg='#fff', width=10, pady=10, command=lambda: self.click('8'))
+            btn_9 = Button(frm_botoes, text='9', bg='#6f6f6f', fg='#fff', width=10, pady=10, command=lambda: self.click('9'))
+
+            btn_mult = Button(frm_botoes, text='x', bg='#2a2a2a', fg='#fff', width=10, pady=10, command=lambda: self.click('x'))
+            btn_4 = Button(frm_botoes, text='4', bg='#6f6f6f', fg='#fff', width=10, pady=10, command=lambda: self.click('4'))
+            btn_5 = Button(frm_botoes, text='5', bg='#6f6f6f', fg='#fff', width=10, pady=10, command=lambda: self.click('5'))
+            btn_6 = Button(frm_botoes, text='6', bg='#6f6f6f', fg='#fff', width=10, pady=10, command=lambda: self.click('6'))
+
+            btn_sub = Button(frm_botoes, text='-', bg='#2a2a2a', fg='#fff', width=10, pady=10, command=lambda: self.click('-'))
+            btn_1 = Button(frm_botoes, text='1', bg='#6f6f6f', fg='#fff', width=10, pady=10, command=lambda: self.click('1'))
+            btn_2 = Button(frm_botoes, text='2', bg='#6f6f6f', fg='#fff', width=10, pady=10, command=lambda: self.click('2'))
+            btn_3 = Button(frm_botoes, text='3', bg='#6f6f6f', fg='#fff', width=10, pady=10, command=lambda: self.click('3'))
+
+            btn_soma = Button(frm_botoes, text='+', bg='#2a2a2a', fg='#fff', width=10, pady=10, command=lambda: self.click('+'))
+            btn_inverte_sinal = Button(frm_botoes, bg='#6f6f6f', fg='#fff', text=u'\u00B1', width=10, pady=10)
+            btn_0 = Button(frm_botoes, text='0', bg='#6f6f6f', fg='#fff', width=10, pady=10, command=lambda: self.click('0'))
+            btn_ponto = Button(frm_botoes, text=',', bg='#6f6f6f', fg='#fff', width=10, pady=10, command=lambda: self.click('.'))
+
+            btn_iqual = Button(frm_botoes, text='=', bg='#6f6f6f', fg='#fff', width=45, pady=10, command=self.igual)
 
 
             # Exibindo widgets de Frames Botões na tela
